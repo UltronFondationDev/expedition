@@ -61,6 +61,12 @@ git clone https://github.com/xops/expedition.git && cd expedition && npm install
 <!-- example usage, screen shots, demos -->
 ## Usage
 
+### Start using docker compose
+```bash
+docker-compose up -d --build
+```
+*The explorer will run at http://localhost:4000/.*
+
 ### Start the explorer
 ```bash
 npm start
@@ -73,7 +79,7 @@ npm start
 
 `?rpcUrl=` Set custom rpc url.
 
-Example: 
+Example:
 
 http://localhost:3000/?rpcUrl=https://www.ethercluster.com/kotti
 

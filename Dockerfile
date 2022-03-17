@@ -9,6 +9,10 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 
+ARG rpc_url
+
+ENV REACT_APP_ETH_RPC_URL=$rpc_url
+
 # Build static assets
 RUN npm run build
 
